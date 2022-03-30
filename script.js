@@ -19,5 +19,5 @@ const getQoute = () => {
       renderQoute(quote);
     }).catch((err) => div.insertAdjacentText("beforeend", `${err} happend`));
 };
-// getQoute();
+ getQoute();
 btn.addEventListener("click", getQoute);
