@@ -17,7 +17,7 @@ const getQoute = () => {
     .then((response) => response.json())
     .then((quote) => {
       renderQoute(quote);
-    });
+    }).catch((err) => div.insertAdjacentText("beforeend", `${err} happend`));
 };
 // getQoute();
 btn.addEventListener("click", getQoute);
